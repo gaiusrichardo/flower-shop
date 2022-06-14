@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/main.css'>
+    <script src='./scripts/main.js' defer></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="main-logo">
+                <h2>floowr</h2>
+            </div>
+
+            <ul class="links">
+                <li><a class="current-link-page" href="#">Shop</a></li>
+                <li><a href="#">Plant Care</a></li>
+                <li><a href="#">Workshop</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+
+            <ul class="cart-save-profile">
+                <li class="cart">
+                    <img src="./assets/imgs/icons/shopping-bag.png" alt="">
+                    <small id="items-in-cart">0</small>
+                </li>
+
+                <li class="saved-items">
+                    <img style="width: 21px;" src="./assets/imgs/icons/saved.png" alt="">
+                </li>
+
+                <li class="user-profile">
+                    <a href="#">
+                        <!-- <img src="./assets/imgs/jimmy-fermin-bqe0J0b26RQ-unsplash.jpg" alt="profile-img"> -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="line-divider"></div>
+
+    <section class="flowers-on-sale">
+        <div class="columns container">
+            <div class="col-1">
+                <h4>Filter</h4>
+                <div class="line-divider"></div>
+                <div class="categories">
+                    <h4>Catogories</h4>
+                    <form>
+                        <input type="checkbox" name="gardening" value="gardening" id="gardening"> 
+                        <label for="gardening">Gardening</label> <br>
+                        <input type="checkbox" name="plant" value="plant" id="plant">
+                        <label for="plant">Plant</label> <br>
+                        <input type="checkbox" name="seed" value="seed" id="seed">
+                        <label for="seed">Seed</label> <br>
+                        <input type="checkbox" name="bulbs" value="bulbs" id="bulbs">
+                        <label for="bulbs">Bulbs</label> <br>
+                        <input type="checkbox" name="planter" value="planter" id="planter">
+                        <label for="planter">Planter</label>
+                    </form>
+                </div>
+                <div class="others">
+                    <p>Others <span><img src="./assets/imgs/icons/down-arrow.png" alt=""></span></p>
+                </div>
+
+                <div class="line-divider"></div>
+
+                <div class="price-range">
+                    <h4>Price range</h4>
+                    <form>
+                        <div class="input-field">
+                            <select name="range">
+                                <option value="min">min</option>
+                                <option value="max">max</option>
+                            </select>
+
+                            <input type="text" name="" id="">
+                        </div>
+
+                        <button id="set-price">Set price</button>
+                    </form>
+                </div>
+
+                <div class="line-divider"></div>
+
+                <div class="rating">
+                    <h4>Rating</h4>
+                    <div class="rates">
+                        <input type="checkbox" name="rating-star" id="rating-star">
+                        <div id="stars-rate">
+                            <img src="./assets/imgs/icons/unrated-star.png" alt="">
+                            <img src="./assets/imgs/icons/unrated-star.png" alt="">
+                            <img src="./assets/imgs/icons/unrated-star.png" alt="">
+                            <img src="./assets/imgs/icons/unrated-star.png" alt="">
+                            <img src="./assets/imgs/icons/unrated-star.png" alt="">
+                        </div>
+                        <p>above</p>
+                    </div>
+                </div>
+
+                <div class="line-divider"></div>
+
+                <div class="share-for-discount">
+                    <h3>GET 40% OFF</h3>
+                    <P>share your referral <br> code and get discount!</P>
+                    <button>Share</button>
+                </div>
+
+            </div>
+    
+            <div class="col-2">
+                <form class="search-field">
+                    <div class="icon">
+                        <img src="./assets/imgs/icons/search.png" alt="">
+                    </div>
+                    <input type="search" name="search" id="search">
+                    <div class="icon" id="cancel-value">
+                        <img src="./assets/imgs/icons/cancel.png" alt="">
+                    </div>
+                </form>
+
+                <div class="searched-for">
+                    <p>Search result for</p>
+                    <span>"Monstera"</span>
+                </div>
+
+                <div class="sorting">
+                    <p>Sort</p>
+                    <ul>
+                        <li><button>Relevance</button></li>
+                        <li><button>Popular</button></li>
+                        <li><button>Most new</button></li>
+                        <li>
+                            <select id="pricing" name="price">
+                                <option value="price">Price</option>
+                                <option value="100">$100</option>
+                                <option value="250">$250</option>
+                                <option value="500">$500</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="products">
+                    <div class="col flower1">
+                        <div class="row save-product">
+                            <img src="./assets/imgs/icons/heart-outline-colored.png" alt="save" class="save-btn">
+                            <img src="./assets/imgs/flower-1.png" alt="flower" class="product-img">
+                        </div>
+                        <div class="row">
+                            <h2 class="flower-name">Monstera Dk var <span id="product-size">(L)</span> </h2>
+                            <div class="product-rating">
+                                <div class="rates">
+                                    <img src="./assets/imgs/icons/full-rating.png" alt="">
+                                    <img src="./assets/imgs/icons/full-rating.png" alt="">
+                                    <img src="./assets/imgs/icons/full-rating.png" alt="">
+                                    <img src="./assets/imgs/icons/full-rating.png" alt="">
+                                    <img src="./assets/imgs/icons/half-rating.png" alt="">
+                                    <p class="num-of-rating">(85)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row open-price">
+                            <div class="product-price">
+                                <small>price</small>
+                                <p>$400</p>
+                            </div>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </div>  
+                    
+                    <div class="col flower2">
+                        <div class="row save-product">
+                            <img src="./assets/imgs/icons/heart-outline-colored.png" alt="save" class="save-btn">
+                            <img src="./assets/imgs/flower-3.png" alt="flower" class="product-img">
+                        </div>
+                        <div class="row">
+                            <h2 class="flower-name">Monstera Dk var <span id="product-size">(L)</span> </h2>
+                            <div class="product-rating">
+                                <div class="rates">
+                                    <img src="./assets/imgs/icons/full-rating.png" alt="">
+                                    <img src="./assets/imgs/icons/full-rating.png" alt="">
+                                    <img src="./assets/imgs/icons/full-rating.png" alt="">
+                                    <img src="./assets/imgs/icons/full-rating.png" alt="">
+                                    <img src="./assets/imgs/icons/half-rating.png" alt="">
+                                    <p class="num-of-rating">(85)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row open-price">
+                            <div class="product-price">
+                                <small>price</small>
+                                <p>$400</p>
+                            </div>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="col flower1">
+                        <div class="row save-product">
+                            <img src="./assets/imgs/icons/heart-outline-colored.png" alt="save" class="save-btn">
+                            <img src="./assets/imgs/flower-4.png" alt="flower" class="product-img">
+                        </div>
+                        <div class="row">
+                            <h2 class="flower-name">Monstera Dk var <span id="product-size">(L)</span> </h2>
+                            <div class="product-rating">
+                                <div class="rates">
+                                    <img src="./assets/imgs/icons/full-rating.png" alt="">
+                                    <img src="./assets/imgs/icons/full-rating.png" alt="">
+                                    <img src="./assets/imgs/icons/full-rating.png" alt="">
+                                    <img src="./assets/imgs/icons/full-rating.png" alt="">
+                                    <img src="./assets/imgs/icons/half-rating.png" alt="">
+                                    <p class="num-of-rating">(85)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row open-price">
+                            <div class="product-price">
+                                <small>price</small>
+                                <p>$400</p>
+                            </div>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="col flower1">
+                        <div class="row save-product">
+                            <img src="./assets/imgs/icons/heart-outline-colored.png" alt="save" class="save-btn">
+                            <img src="./assets/imgs/flower-4.png" alt="flower" class="product-img">
+                        </div>
+                        <div class="row">
+                            <h2 class="flower-name">Monstera Dk var <span id="product-size">(L)</span> </h2>
+                            <div class="product-rating">
+                                <div class="rates">
+                                    <img src="./assets/imgs/icons/full-rating.png" alt="">
+                                    <img src="./assets/imgs/icons/full-rating.png" alt="">
+                                    <img src="./assets/imgs/icons/full-rating.png" alt="">
+                                    <img src="./assets/imgs/icons/full-rating.png" alt="">
+                                    <img src="./assets/imgs/icons/half-rating.png" alt="">
+                                    <p class="num-of-rating">(85)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row open-price">
+                            <div class="product-price">
+                                <small>price</small>
+                                <p>$400</p>
+                            </div>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-3 visibility"></div>
+        </div>
+    </section>
+
+    <section class="credit-ui-creator">
+    </section>
+</body>
+</html>
