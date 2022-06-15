@@ -42,8 +42,6 @@ const selectedStar = (star, condition, conditionTwo) => {
     }
 }
 
-const deselectStar = 
-
 // check if a star was clicked ahead of the other and then fill it
 
 starOne.addEventListener('click', selectedStar.bind(this, starOne))
